@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Information Finder</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+</head>
+<body>
+    <div class="box">
+        <div class="flask">🧪</div>
+        <h1>Periodic Table Information Finder</h1>
+
+        <span class="label">Enter a non-metal symbol:</span>
+        <input type="text" id="symbol" placeholder="e.g. O, N, Cl"><br>
+        <button type="submit" py-click="search_element">Search</button>
+
+        <div id="output"></div>
+    </div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
